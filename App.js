@@ -31,11 +31,11 @@ export default function App() {
       `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=alerts&appid=${API_KEY}`
     );
     const json = await respone.json();
-    //  console.log(json);
+    console.log(json);
   };
-  // useEffect(() => {
-  //   ask();
-  // }, []);
+  useEffect(() => {
+    ask();
+  }, []);
 
   return (
     <View style={styles.container}>
